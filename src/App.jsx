@@ -62,13 +62,17 @@ export default function App() {
       <fieldset className="fielset">
         <h2 className="h1">Post tafsilotlari</h2>
         <input
-        className="input"
+          className="input"
           type="number"
           onChange={(e) => setPostId(Number(e.target.value))}
           placeholder="Post ID kiriting"
         />
         <div>
-        {isPostLoading ? <p>Yuklanmoqda...</p> : <mark className="mark">{post?.title}...</mark>}
+          {isPostLoading ? (
+            <p>Yuklanmoqda...</p>
+          ) : (
+            <mark className="mark">{post?.title}...</mark>
+          )}
         </div>
       </fieldset>
     </div>
