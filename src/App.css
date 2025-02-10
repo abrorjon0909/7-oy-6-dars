@@ -26,6 +26,7 @@ ul {
     border-radius: 10px;
     transition: 0.4s;
     border: 2px dotted black;
+    margin-bottom: 20px;
 }
 .fielset:hover {
     background-color: antiquewhite;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import "./App.css";
+import PostForm from "./components/2-top/post";
 
 const fetchUsers = async (page) => {
   const { data } = await axios.get(
@@ -75,6 +76,7 @@ export default function App() {
           )}
         </div>
       </fieldset>
+      <PostForm></PostForm>
     </div>
   );
 }
